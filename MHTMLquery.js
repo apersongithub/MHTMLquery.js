@@ -8,11 +8,7 @@ function setCookie(name, value, samesitelsn) {
   document.cookie = name + '=' + value; + " " + "SameSite=" + samesitelsn + " " + 'Secure'
   log(name, value, samesitelsn)
   };
-
-function setCookie(name, value) {
-  document.cookie = name + '=' + value;
-};
-
+  
 //change an element's ID by selector name.
 function changeIDselector(selector, id) {
 if (document.querySelector(element)) {
