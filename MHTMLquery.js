@@ -1,21 +1,25 @@
 /* mhtmlquery.js - a person#25664 */
 /* MIT License */
 
-var log = console.log
+//Basic Variables
 
-//JS set Cookie
+var log = console.log;
+var ede = "Element inputted doesn't exist."
+
+//JS setCookie
 function setCookie(name, value, samesitelsn) {
-  document.cookie = name + '=' + value; + " " + "SameSite=" + samesitelsn + " " + 'Secure'
-  log(name, value, samesitelsn)
-  };
-  
+document.cookie = name + '=' + value; + " " + "SameSite=" + samesitelsn + " " + 'Secure'
+log(name, value, samesitelsn)
+};
+
+
 //change an element's ID by selector name.
 function changeIDselector(selector, id) {
-if (document.querySelector(element)) {
-    document.querySelector(element).id = id;
+if (document.querySelector(selector)) {
+    document.querySelector(selector).id = id;
     log(id)
 } else {
-  error("Element doesn't exist")
+  error(ede)
 }};
 
 //change an element's ID by class name.
@@ -24,7 +28,7 @@ if (document.getElementsByClassName(classname)) {
     document.getElementsByClassName(classname).id = id;
     log(id)
 } else {
-  error("Element doesn't exist")
+  error(ede)
 }};
 
 //change an element's ID by tag name.
@@ -33,7 +37,7 @@ if (document.getElementsByTagName(tagname)) {
     document.getElementsByTagName(tagname).id = id;
     log(id)
 } else {
-  error("Element doesn't exist")
+  error(ede)
 }};
 
 //change an element's ID by name.
@@ -42,7 +46,7 @@ if (document.getElementsByName(name)) {
     document.getElementsByName(name).id = id;
     log(id)
 } else {
-  error("Element doesn't exist")
+  error(ede)
 }};
 
 //ERROR MESSAGE//
