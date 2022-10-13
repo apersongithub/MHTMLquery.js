@@ -1,6 +1,8 @@
 /* mhtmlquery.js - a person#25664 */
 /* MIT License */
 
+var log = console.log
+
 //change an element's ID by selector name.
 function changeIDselector(selector, id) {
 if (document.querySelector(element)) {
