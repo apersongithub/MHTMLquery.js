@@ -3,6 +3,16 @@
 
 var log = console.log
 
+//JS Cookie
+function setCookie(name, value) {
+  document.cookie = name + '=' + value;
+};
+
+
+function setCookie(name, value) {
+  document.cookie = name + '=' + value;
+};
+
 //change an element's ID by selector name.
 function changeIDselector(selector, id) {
 if (document.querySelector(element)) {
