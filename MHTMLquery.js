@@ -12,6 +12,7 @@ document.cookie = name + '=' + value; + " " + "SameSite=" + samesitelsn + " " + 
 log(name, value, samesitelsn)
 };
 
+//*SELECTING ELEMENTS BY ID*//
 
 //change an element's ID by selector name.
 function changeIDselector(selector, id) {
@@ -24,8 +25,8 @@ if (document.querySelector(selector)) {
 
 //change an element's ID by class name.
 function changeIDclass(classname, id) {
-if (document.getElementsByClassName(classname)) {
-    document.getElementsByClassName(classname).id = id;
+if (document.getElementsByClassName(classname)[0]) {
+    document.getElementsByClassName(classname)[0].id = id;
     log(id)
 } else {
   error(ede)
@@ -33,8 +34,8 @@ if (document.getElementsByClassName(classname)) {
 
 //change an element's ID by tag name.
 function changeIDtagname(tagname, id) {
-if (document.getElementsByTagName(tagname)) {
-    document.getElementsByTagName(tagname).id = id;
+if (document.getElementsByTagName(tagname)[0]) {
+    document.getElementsByTagName(tagname)[0].id = id;
     log(id)
 } else {
   error(ede)
@@ -42,12 +43,14 @@ if (document.getElementsByTagName(tagname)) {
 
 //change an element's ID by name.
 function changeIDname(name, id) {
-if (document.getElementsByName(name)) {
-    document.getElementsByName(name).id = id;
+if (document.getElementsByName(name)[0]) {
+    document.getElementsByName(name)[0].id = id;
     log(id)
 } else {
   error(ede)
 }};
+
+//*SELECTING ELEMENTS BY ID*//
 
 //ERROR MESSAGE//
 function error(message) {
