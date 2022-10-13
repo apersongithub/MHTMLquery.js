@@ -1,5 +1,5 @@
 # MHTMLquery.js
-A js library with an over simplified syntax, custom console error messages, new features, easier development.
+A javascript library with an over simplified syntax, custom console error messages, new features, easier development.
 
 Note this is in very very early development.
 
