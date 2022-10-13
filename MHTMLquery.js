@@ -3,11 +3,11 @@
 
 var log = console.log
 
-//JS Cookie
-function setCookie(name, value) {
-  document.cookie = name + '=' + value;
-};
-
+//JS set Cookie
+function setCookie(name, value, samesitelsn) {
+  document.cookie = name + '=' + value; + " " + "SameSite=" + samesitelsn + " " + 'Secure'
+  log(name, value, samesitelsn)
+  };
 
 function setCookie(name, value) {
   document.cookie = name + '=' + value;
